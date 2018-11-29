@@ -1,10 +1,29 @@
 <style>
 div{
-  margin-left: 50;
+  border: 1px solid black;
+}
+.grid_body{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.grid_body_item{
+  grid-column-start:1;
+  grid-column-end: 6;
+}
+#top_a{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color : black;
+  border-bottom: 5px solid pink;
+  padding : 10px;
 }
 
+
 /***************************top_line 부분*************************/
-#top_line h1 {
+/* #top_line h1 {
   color: red;
   font-size: 40px;
   text-align: center;
@@ -17,7 +36,7 @@ div{
   text-decoration: none;
   color: red;
   display: block;
-}
+} */
 
 /***************************그리드 메뉴바 *************************/
 .grid_menu {
