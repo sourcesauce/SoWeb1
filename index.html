@@ -3,8 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title>메인 페이지</title>
+  <title>So의 Web세상</title>
   <style media="screen">
+    body {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
     /***************************top_line 부분*************************/
     #top_line h1 {
       color: black;
@@ -19,18 +24,21 @@
       text-decoration: none;
       color: black;
     }
-/****************그리드 메뉴바 ******************/
+
+    /***************************그리드 메뉴바 *************************/
     .grid_menu {
       background-color: #2d2d2d;
       text-align: center;
       padding: 10px;
       display: grid;
     }
-    .grid_menu_item{
+
+    .grid_menu_item {
       grid-row-start: 1;
       grid-row-end: 4;
     }
-    .grid_menu_item a{
+
+    .grid_menu_item a {
       color: white;
       text-decoration: none;
       display: block;
@@ -43,27 +51,32 @@
 </head>
 
 <body>
-  <div id="top_line">
-    <h1><a href="index.html">So의 Web세상</a></h1>
+  <div>
+    <div id="top_line">
+      <h1><a href="index.html">So의 Web세상</a></h1>
+    </div>
+
+    <div class="grid_menu">
+      <div class="grid_menu_item">
+        <a href="1.html">유저드립</a>
+      </div>
+      <div class="grid_menu_item">
+        <a href="2.html">방송연예</a>
+      </div>
+      <div class="grid_menu_item">
+        <a href="3.html">익명채팅</a>
+      </div>
+      <div class="grid_menu_item">
+        <a href="bookmark.html">북마크</a>
+      </div>
+    </div>
+
+    <div>
+      <p>index 페이지 입니다.</p>
+      <p>총 4개의 페이지로 구성되어있고</p>
+      <p>유저드립, 방송연예, 익명채팅, 북마크로 이루어져있습니다.</p>
+    </div>
   </div>
-
-
-  <div class="grid_menu">
-    <div class="grid_menu_item">
-      <a href="1.html">유저드립</a>
-    </div>
-    <div class="grid_menu_item">
-      <a href="2.html">방송연예</a>
-    </div>
-    <div class="grid_menu_item">
-      <a href="3.html">익명채팅</a>
-    </div>
-    <div class="grid_menu_item">
-      <a href="bookmark.html">북마크</a>
-    </div>
-  </div>
-
-
 
 </body>
 
