@@ -1,3 +1,4 @@
+<?php $topTitle = "So의 Web세상"?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -11,16 +12,16 @@
   <div class="grid_body">
 
     <div class="grid_body_item">
-      <a id="top_a" href="index.html">So의 Web세상</a>
+      <a id="top_a" href="index.php"> <?php echo "$topTitle"; ?></a>
     </div>
 
     <div class="grid_body_item">
       <div class="grid_menu">
         <div class="grid_menu_item">
-          <a href="1.html">유저드립</a>
+          <a href="main_page.php?id=userdrip">유저드립</a>
         </div>
         <div class="grid_menu_item">
-          <a href="2.html">방송연예</a>
+          <a href="main_page.php?id=broadcasting">방송연예</a>
         </div>
         <div class="grid_menu_item">
           <a href="3.html">익명채팅</a>
@@ -30,7 +31,6 @@
         </div>
       </div>
     </div>
-
 
     <div class="grid_body_item">
       <p>index 페이지 입니다.</p>
