@@ -24,10 +24,10 @@
           <a href="main_page.php?id=broadcasting">방송연예</a>
         </div>
         <div class="grid_menu_item">
-          <a href="3.html">익명채팅</a>
+          <a href="main_page.php?id=anonymous">익명채팅</a>
         </div>
         <div class="grid_menu_item">
-          <a href="bookmark.html">북마크</a>
+          <a href="bookmark.php">북마크</a>
         </div>
       </div>
     </div>
