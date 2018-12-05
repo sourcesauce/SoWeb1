@@ -19,7 +19,7 @@
         <li><a class="menuLink" href="main_page.php?id=user">유저업로드</a></li>
         <li><a class="menuLink" href="main_page.php?id=tv">방송연예</a></li>
         <li><a class="menuLink" href="main_page.php?id=gallery">사진</a></li>
-        <li><a class="menuLink" href="main_page.php">북마크</a></li>
+        <li><a class="menuLink" href="main_page.php?id=bookmark">북마크</a></li>
       </ul>
     </nav>
 

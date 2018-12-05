@@ -1,0 +1,15 @@
+<div class="bookmark_menu_item">
+  <a href="https://www.naver.com" target="_blank" title="NAVER로 이동합니다.">
+    <img src="/img/naver_logo.jpg" alt="" height="80" width="80">
+  </a>
+</div>
+<div>
+  <a href="https://www.google.com" target="_blank" title="Google로 이동합니다.">
+    <img src="/img/google_logo.jpg" alt="" height="80" width="80">
+  </a>
+</div>
+<div>
+  <a href="https://www.youtube.com" target="_blank" title="Youtube로 이동합니다.">
+    <img src="/img/youtube_logo.jpg" alt="" height="80" width="80">
+  </a>
+</div>
