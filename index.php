@@ -16,21 +16,27 @@
     <!-- 상단 끝 -->
     <nav id="top_menu">
       <ul>
-        <li><a class="menuLink" href="main_page.php?id=user">유저업로드</a></li>
-        <li><a class="menuLink" href="main_page.php?id=tv">방송연예</a></li>
-        <li><a class="menuLink" href="main_page.php?id=gallery">사진</a></li>
-        <li><a class="menuLink" href="main_page.php?id=bookmark">북마크</a></li>
+        <li><a class="menuLink" href="main_page.php?board=user">유저업로드</a></li>
+        <li><a class="menuLink" href="main_page.php?board=tv">방송연예</a></li>
+        <li><a class="menuLink" href="main_page.php?board=gallery">사진</a></li>
+        <li><a class="menuLink" href="main_page.php?board=bookmark">북마크</a></li>
       </ul>
     </nav>
 
 <!-- 메인 시작 -->
     <div class="wrapper">
+      <!-- 로그인,광고 -->
       <div class="left_section">
-        로그인
+        <form class="" action="login_test.php" method="POST">
+          <input type="text" placeholder="id" name="id" value="">
+          <input type="text" placeholder="pw" name="pw" value="">
+          <input type="submit" value="로그인하기">
+        </form>
+
         <p>광고</p>
         <img src="/img/luda.jpg" alt="루다짱" height="350" width="200">
       </div>
-
+      <!-- 글 부분 -->
       <div class="right_section">
         <p>index 페이지 입니다.</p>
         <p>총 4개의 페이지로 구성되어있고</p>
