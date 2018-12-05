@@ -9,35 +9,39 @@
 </head>
 
 <body>
-  <div class="grid_body">
+    <!-- 상단시작 -->
+    <header id="top_line">
+      <a href="index.php"> <?php echo "$topTitle"; ?></a>
+    </header>
+    <!-- 상단 끝 -->
+    <nav id="top_menu">
+      <ul>
+        <li><a class="menuLink" href="main_page.php?id=user">유저업로드</a></li>
+        <li><a class="menuLink" href="main_page.php?id=tv">방송연예</a></li>
+        <li><a class="menuLink" href="main_page.php?id=gallery">사진</a></li>
+        <li><a class="menuLink" href="main_page.php">북마크</a></li>
+      </ul>
+    </nav>
 
-    <div class="grid_body_item">
-      <a id="top_a" href="index.php"> <?php echo "$topTitle"; ?></a>
-    </div>
+<!-- 메인 시작 -->
+    <div class="wrapper">
+      <div class="left_section">
+        로그인
+        <p>광고</p>
+        <img src="/img/luda.jpg" alt="루다짱" height="350" width="200">
+      </div>
 
-    <div class="grid_body_item">
-      <div class="grid_menu">
-        <div class="grid_menu_item">
-          <a href="main_page.php?id=userdrip">유저드립</a>
-        </div>
-        <div class="grid_menu_item">
-          <a href="main_page.php?id=broadcasting">방송연예</a>
-        </div>
-        <div class="grid_menu_item">
-          <a href="3.html">익명채팅</a>
-        </div>
-        <div class="grid_menu_item">
-          <a href="bookmark.html">북마크</a>
-        </div>
+      <div class="right_section">
+        <p>index 페이지 입니다.</p>
+        <p>총 4개의 페이지로 구성되어있고</p>
+        <p>유저드립, 방송연예, 익명채팅, 북마크로 이루어져있습니다.</p>
+      </div>
+
+      <div class="footer">
+        바닥입니다
       </div>
     </div>
-
-    <div class="grid_body_item">
-      <p>index 페이지 입니다.</p>
-      <p>총 4개의 페이지로 구성되어있고</p>
-      <p>유저드립, 방송연예, 익명채팅, 북마크로 이루어져있습니다.</p>
-    </div>
-  </div>
+<!-- 메인 끝 -->
 
 </body>
 

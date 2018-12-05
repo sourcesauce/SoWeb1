@@ -1,83 +1,68 @@
-<style>
-div{
+@charset "utf-8";
+/************상단 메뉴,로고*************/
+#top_line{
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
   border: 1px solid black;
 }
-.grid_body{
-  margin-left: 100px;
-  margin-right: 100px;
-}
-.grid_body_item{
-  grid-column-start:1;
-  grid-column-end: 6;
-}
-#top_a{
-  font-size: 40px;
+#top_line a{
+  display: block;
+  text-decoration: none;
+  font-size: 35px;
   font-weight: bold;
-  text-align: center;
-  display: block;
-  text-decoration: none;
-  color : black;
-  border-bottom: 5px solid pink;
-  padding : 10px;
+  color: black;
 }
 
-
-/***************************top_line 부분*************************/
-/* #top_line h1 {
-  color: red;
-  font-size: 40px;
+#top_menu{
+  border: 1px solid black;
   text-align: center;
-  border-bottom: 5px solid gray;
-  padding: 10px;
+}
+#top_menu ul{
+  display: inline-block;
   margin: 0;
+  padding: 0;
 }
-
-#top_line a {
-  text-decoration: none;
-  color: red;
-  display: block;
-} */
-
-/***************************그리드 메뉴바 *************************/
-.grid_menu {
+#top_menu ul li {
+  list-style: none;
   background-color: #2d2d2d;
+  float: left;
+  line-height: 40px;
+  vertical-align: middle;
   text-align: center;
-  padding: 10px;
-  display: grid;
 }
-
-.grid_menu_item {
-  grid-row-start: 1;
-  grid-row-end: 4;
-}
-
-.grid_menu_item a {
-  color: white;
+#top_menu .menuLink{
   text-decoration: none;
+  color: white;
   display: block;
   width: 150px;
   font-size: 20px;
   font-weight: bold;
-  line-height: 30px;
 }
 
-/*********************북마크 *************************/
-.bookmark_menu {
-  border: 1px solid gray;
-  margin-top: 50px;
+#top_menu .menuLink:hover{
+  background-color: #4d4d4d;
+}
+
+/***************메인 부분 grid 이용****************/
+.wrapper{
   display: grid;
-  text-align: center;
+  grid-gap: 5px;
+  grid-template-columns: 250px auto;
+  grid-template-rows: auto auto;
 }
-
-.bookmark_menu_item {
-  grid-row-start: 1;
-  grid-row-end: 3;
-  border: 1px solid gray;
-  padding: 5px;
+.left_section{
+  border: 1px solid black;
 }
-
-.bookmark_menu_item a {
-  display: block;
+.right_section{
+  border: 1px solid black;
 }
-
-</style>
+.footer{
+  grid-row: 2;
+  grid-column: 1/3;
+  background-color: #4d4d4d;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid black;
+}
