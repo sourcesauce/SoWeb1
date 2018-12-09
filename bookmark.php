@@ -1,27 +1,12 @@
-<?php $topTitle = "So의 Web세상"?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <title>So의 Web세상</title>
-  <link rel="stylesheet" href="style.css">
+  <?php require('lib/head.php'); ?>
 </head>
 
 <body>
-    <!-- 상단시작 -->
-    <header id="top_line">
-      <a href="index.php"> <?php echo "$topTitle"; ?></a>
-    </header>
-    <!-- 상단 끝 -->
-    <nav id="top_menu">
-      <ul>
-        <li><a class="menuLink" href="main_page.php?board=user">유저업로드</a></li>
-        <li><a class="menuLink" href="main_page.php?board=tv">방송연예</a></li>
-        <li><a class="menuLink" href="main_page.php?board=gallery">사진</a></li>
-        <li><a class="menuLink" href="main_page.php?board=bookmark">북마크</a></li>
-      </ul>
-    </nav>
+  <?php require('lib/top.php'); ?>
 
 <!-- 메인 시작 -->
     <div class="wrapper">
@@ -39,7 +24,8 @@
       <div class="right_section">
         <?php
           $board_result=$_GET['board'];
-          echo file_get_contents("data/".$board_result.".txt"); ?>
+          echo file_get_contents("data/".$board_result.".txt");
+          ?>
           <!-- TEST -->
           <form class="" action="create.php" method="post">
             <p>

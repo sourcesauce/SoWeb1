@@ -1,10 +1,9 @@
 @charset "utf-8";
-/************상단 메뉴,로고*************/
+/*******************상단로고**********************/
 #top_line{
   text-align: center;
   padding: 10px;
   margin: 0px;
-  border: 1px solid black;
 }
 #top_line a{
   display: block;
@@ -13,9 +12,8 @@
   font-weight: bold;
   color: black;
 }
-
+/*****************상단메뉴********************/
 #top_menu{
-  border: 1px solid black;
   text-align: center;
 }
 #top_menu ul{
@@ -57,6 +55,7 @@
 .right_section{
   border: 1px solid black;
 }
+/***************************footer*****************/
 .footer{
   grid-row: 2;
   grid-column: 1/3;

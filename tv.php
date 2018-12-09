@@ -8,12 +8,11 @@
 <body>
   <?php require('lib/top.php'); ?>
 
-
 <!-- 메인 시작 -->
     <div class="wrapper">
       <!-- 로그인,광고 -->
       <div class="left_section">
-        <form class="" action="login_test.php" method="POST">
+        <form class="" action="login_test.php" method="GET">
           <input type="text" placeholder="id" name="id" value="">
           <input type="text" placeholder="pw" name="pw" value="">
           <input type="submit" value="로그인하기">
@@ -22,11 +21,12 @@
         <p>광고</p>
         <img src="/img/luda.jpg" alt="루다짱" height="350" width="200">
       </div>
-      <!-- 글 부분 -->
       <div class="right_section">
-        <p>index 페이지 입니다.</p>
-        <p>총 4개의 페이지로 구성되어있고</p>
-        <p>유저드립, 방송연예, 익명채팅, 북마크로 이루어져있습니다.</p>
+          <!-- TEST -->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/4D7zDAln58c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>
+            <strong>방송연예 페이지 입니다.</strong>
+          </p>
       </div>
 
       <div class="footer">
