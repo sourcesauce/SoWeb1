@@ -47,7 +47,7 @@
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 250px auto;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto 30px;
 }
 .left_section{
   border: 1px solid black;
@@ -59,9 +59,12 @@
 .footer{
   grid-row: 2;
   grid-column: 1/3;
-  background-color: #4d4d4d;
+  background-color: #413f3f;
+  text-align: center;
+}
+.footer a{
   color: white;
-  font-size: 25px;
-  font-weight: bold;
-  border: 1px solid black;
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 10px;
 }

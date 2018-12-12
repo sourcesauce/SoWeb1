@@ -29,9 +29,8 @@
           </p>
       </div>
 
-      <div class="footer">
-        바닥입니다
-      </div>
+      <!-- FOOTER SECTION -->
+      <?php require('lib/footer.php'); ?>
     </div>
 <!-- 메인 끝 -->
 

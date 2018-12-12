@@ -6,6 +6,7 @@
 </head>
 
 <body>
+  <!-- nav,logo 위치 -->
   <?php require('lib/top.php'); ?>
 
 
@@ -29,9 +30,8 @@
         <p>유저드립, 방송연예, 익명채팅, 북마크로 이루어져있습니다.</p>
       </div>
 
-      <div class="footer">
-        바닥입니다
-      </div>
+      <!-- FOOTER SECTION -->
+      <?php require('lib/footer.php'); ?>
     </div>
 <!-- 메인 끝 -->
 
