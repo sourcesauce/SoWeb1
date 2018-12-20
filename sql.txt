@@ -1,0 +1,8 @@
+Table structure------------------------------
+CREATE TABLE user(
+id INT(11) UNSIGNED  NOT NULL PRIMARY KEY AUTO_INCREMENT,
+title VARCHAR(100) NOT NULL,
+description TEXT NULL,
+created DATETIME,
+recommend INT(11) UNSIGNED NOT NULL
+);

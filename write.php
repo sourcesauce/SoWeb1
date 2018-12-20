@@ -2,6 +2,9 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <?php
+  mysqli_connect("localhost","root","thtm1423","user")
+   ?>
   <?php require('lib/head.php'); ?>
 </head>
 
@@ -21,11 +24,17 @@
         <p>광고</p>
         <img src="/img/luda.jpg" alt="루다짱" height="350" width="200">
       </div>
-      <!-- 본문 -->
       <div class="right_section">
-        <div class="writeButton">
-          <a href="write.php">글 작성</a>
-        </div>
+          <!-- TEST -->
+          <form class="" action="create.php" method="post">
+            <p>
+              <input type="text" name="title" placeholder="제목">
+            </p>
+            <p>
+              <textarea name="description" rows="8" cols="80" placeholder="본문"></textarea>
+            </p>
+            <input type="submit" value="입력">
+          </form>
       </div>
 
       <!-- FOOTER SECTION -->
