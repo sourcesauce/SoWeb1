@@ -49,11 +49,25 @@
   grid-template-columns: 250px auto;
   grid-template-rows: auto 30px;
 }
-.left_section{
+.leftSection{
   border: 1px solid black;
 }
-.right_section{
+.rightSection{
+  padding: 5px;
   border: 1px solid black;
+}
+/***********************writeSection***************/
+#writeTable{
+  border-spacing: 0px;
+}
+.writeLeft{
+  font-size:15px;
+  font-weight: bold;
+  padding-right: 20px;
+  background-color: rgb(202, 241, 240);
+}
+#writeTitle{
+  weight:200px;
 }
 /***************************footer*****************/
 .footer{

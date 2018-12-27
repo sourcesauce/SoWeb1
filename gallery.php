@@ -11,17 +11,9 @@
 <!-- 메인 시작 -->
     <div class="wrapper">
       <!-- 로그인,광고 -->
-      <div class="left_section">
-        <form class="" action="login_test.php" method="GET">
-          <input type="text" placeholder="id" name="id" value="">
-          <input type="text" placeholder="pw" name="pw" value="">
-          <input type="submit" value="로그인하기">
-        </form>
+      <?php require('lib/aside.php'); ?>
 
-        <p>광고</p>
-        <img src="/img/luda.jpg" alt="루다짱" height="350" width="200">
-      </div>
-      <div class="right_section">
+      <div class="rightSection">
         <?php
           $board_result=$_GET['board'];
           echo file_get_contents("data/".$board_result.".txt");
