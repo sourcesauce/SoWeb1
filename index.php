@@ -14,7 +14,7 @@
     <div class="wrapper">
       <!-- 로그인,광고 -->
       <?php require('lib/aside.php'); ?>
-      
+
       <!-- 글 부분 -->
       <div class="rightSection">
         <p>index 페이지 입니다.</p>

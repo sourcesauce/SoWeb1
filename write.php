@@ -33,33 +33,32 @@
     <div class="wrapper">
       <!-- 로그인,광고 -->
       <?php require('lib/aside.php'); ?>
-      
-      <div class="rightSection">
 
+      <div class="rightSection">
+          <!-- 글쓰기 -->
           <form action="create.php" method="post">
-            <table id="writeTable">
+            <table width="990" border="0" align="center" cellpadding="0" cellspacing="0">
               <thead>
                 <tr>
                   <th class="writeLeft">제목</th>
-                  <td><input id="writeTitle" type="text" name="title" placeholder="제목"></th>
+                  <td class="writeRight"><input type="text" name="title" placeholder="제목" size="60"></td>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th class="writeLeft">본문</th>
-                  <td><textarea name="description" rows="8" cols="80" placeholder="본문"></textarea></th>
+                  <td class="writeRight"><textarea name="description" rows="8" cols="80" placeholder="본문"></textarea></td>
                 </tr>
               </tbody>
             </table>
-              <tfoot>
-                <tr>
-                  <th class="writeLeft"> </th>
-                  <td><input type="submit" value="입력"></th>
-                </tr>
-              </tfoot>
-
+              <br/>
+            <table align="center" border="0">
+              <tr>
+                <td width="80"><input class="writeResult" type="submit" value="글쓰기"></td>
+                <td width="80"><a class="writeResult" href="index.php">목록으로</a></td>
+              </tr>
+            </table>
           </form>
-
       </div>
 
       <!-- FOOTER SECTION -->
