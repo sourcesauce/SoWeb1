@@ -16,12 +16,16 @@ if(mysqli_connect_errno()){
 //   $list = $list."{$row['id']},{$row['title']},{$row['created']},{$row['recommend']}";
 // }
 
+
 //반복문으로 mysqli_fetch_array의 값을 없음(false) 될 때까지 가져옴
 while($row = mysqli_fetch_array($result)){
+  //XSS(Cross site scriptiong)차단
+  $escaped_title = htmlspecialchars($row['title']);
+
   $list = $list.
   "<tr>
     <td>{$row['id']}</td>
-    <td>{$row['title']}</td>
+    <td>{$escaped_title}</td>
     <td>{$row['created']}</td>
     <td>{$row['recommend']}</td>
   </tr>";
