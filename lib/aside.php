@@ -1,3 +1,4 @@
+<!-- JavaScript를 이용해서 google 로그인 써보기 -->
 <div class="leftSection">
   <form class="" action="login_test.php" method="POST">
     <input type="text" placeholder="id" name="id" value="">

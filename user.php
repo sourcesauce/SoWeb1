@@ -57,20 +57,27 @@ while($row = mysqli_fetch_array($result)){
 
       <!-- 본문 -->
       <div class="rightSection">
-        <h3>유저게시판</h3>
-
-        <table class="boradTable" border="0" align="center" cellpadding="0" cellspacing="0">
+        <h3>유저업로드</h3>
+        <table id="userTableHead" border="1" align="center" cellpadding="0" cellspacing="0">
+          <colgroup>
+            <col width="20">
+            <col width="200">
+            <col width="50">
+            <col width="30">
+          </colgroup>
           <thead>
             <tr>
-              <td>번호</td>
-              <td>제목</td>
-              <td>날짜</td>
-              <td>추천</td>
+              <th>번호</th>
+              <th class="title">제목</th>
+              <th class="date">날짜</th>
+              <th class="hit">추천</th>
             </tr>
           </thead>
+        <tbody>
           <?php
           echo $list;
           ?>
+        </tbody>
         </table>
 
         <div class="writeButton">

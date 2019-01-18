@@ -1,4 +1,0 @@
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4D7zDAln58c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>
-  <strong>방송연예 페이지 입니다.</strong>
-</p>
