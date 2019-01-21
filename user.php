@@ -1,16 +1,9 @@
 <?php
-$conn = mysqli_connect("localhost","root","thtm1423","soweb1");
+require ('./db_conn.php');
 $sql = "SELECT * FROM user ORDER BY id DESC";
 $result = mysqli_query($conn, $sql);
 $list = '';
-if($result === false){
- echo mysqli_error($conn);
-}
-//mysql 접속 에러 확인
-if(mysqli_connect_errno()){
-  printf("Cnnect failed: %s\n",mysqli_connect_error());
-  exit();
-}
+
 // //반복문으로 mysqli_fetch_array의 값을 없음(false) 될 때까지 가져옴
 // while($row = mysqli_fetch_array($result)){
 //   $list = $list."{$row['id']},{$row['title']},{$row['created']},{$row['recommend']}";
@@ -18,6 +11,7 @@ if(mysqli_connect_errno()){
 
 
 //반복문으로 mysqli_fetch_array의 값을 없음(false) 될 때까지 가져옴
+
 while($row = mysqli_fetch_array($result)){
   //XSS(Cross site scriptiong)차단
   $escaped_title = htmlspecialchars($row['title']);
@@ -25,12 +19,22 @@ while($row = mysqli_fetch_array($result)){
   $list = $list.
   "<tr>
     <td>{$row['id']}</td>
-    <td>{$escaped_title}</td>
+    <td><a href='./user_board.php?id={$row['id']}'>{$escaped_title}</a></td>
     <td>{$row['created']}</td>
     <td>{$row['recommend']}</td>
   </tr>";
 }
+
+
 ?>
+
+
+<!------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------>
+
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -58,6 +62,7 @@ while($row = mysqli_fetch_array($result)){
       <!-- 본문 -->
       <div class="rightSection">
         <h3>유저업로드</h3>
+        <h3><?php echo ($allDataNum); ?></h3> </h3>
         <table id="userTableHead" border="1" align="center" cellpadding="0" cellspacing="0">
           <colgroup>
             <col width="20">
