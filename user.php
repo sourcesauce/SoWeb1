@@ -15,11 +15,18 @@ $list = '';
 while($row = mysqli_fetch_array($result)){
   //XSS(Cross site scriptiong)차단
   $escaped_title = htmlspecialchars($row['title']);
+  $datetime = explode(' ', $row['created']);
+							$date = $datetime[0];
+							$time = $datetime[1];
 
+							if($date == Date('Y-m-d'))
+								$row['created'] = $time;
+							else
+								$row['created'] = $date;
   $list = $list.
   "<tr>
     <td>{$row['id']}</td>
-    <td><a href='./user_board.php?id={$row['id']}'>{$escaped_title}</a></td>
+    <td><a href='./user_view.php?viewId={$row['id']}'>{$escaped_title}</a></td>
     <td>{$row['created']}</td>
     <td>{$row['recommend']}</td>
   </tr>";
@@ -28,12 +35,6 @@ while($row = mysqli_fetch_array($result)){
 
 ?>
 
-
-<!------------------------------------------------------------------------------------>
-<!------------------------------------------------------------------------------------>
-<!------------------------------------------------------------------------------------>
-<!------------------------------------------------------------------------------------>
-<!------------------------------------------------------------------------------------>
 
 
 <!DOCTYPE html>
@@ -68,7 +69,7 @@ while($row = mysqli_fetch_array($result)){
             <col width="20">
             <col width="200">
             <col width="50">
-            <col width="30">
+            <col width="20">
           </colgroup>
           <thead>
             <tr>
@@ -84,12 +85,12 @@ while($row = mysqli_fetch_array($result)){
           ?>
         </tbody>
         </table>
-
+        <!-- ---------------------------------------------------------------- -->
         <div class="writeButton">
           <a href="write.php">글 작성</a>
         </div>
       </div>
-
+      
       <!-- FOOTER SECTION -->
       <?php require('lib/footer.php'); ?>
     </div>

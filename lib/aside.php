@@ -7,5 +7,5 @@
   </form>
 
   <p>광고</p>
-  <img src="/img/luda.jpg" alt="루다짱" height="350" width="200">
+  <img src="/img/sample.jpg" alt="sample" height="450" width="200">
 </div>
